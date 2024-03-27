@@ -1,0 +1,47 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="Snake"
+run/main_scene="res://MainGame.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=800
+window/size/height=800
+
+[global]
+
+layer=false
+capas=false
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[layer_names]
+
+2d_render/layer_1="Snake"
+2d_render/layer_2="Apple"
+2d_render/layer_3="RottenApple"
+
+[mono]
+
+project/assembly_name="Snake"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
